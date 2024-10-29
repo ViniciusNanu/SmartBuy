@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: inline-block;
+    background-color:lightgray;
+    
+}
+
+.productDescription{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageSubtitle{
+    display: flex;
+}
+
+.buttonCarrinho{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    background-color: grey;
+    border-radius: 5px;
+    height: 40px;
+    
+}
+
+.productDetail{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: grey;
+    border:none;
+    border-radius: 40px;
+    
+ 
+}
+
+button:hover{
+    background-color: #2980b9;
+}
