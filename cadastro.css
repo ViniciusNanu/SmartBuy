@@ -15,7 +15,7 @@
 }
 
 header {
-  background-color: #3e2a4a;
+  background-color: #27273f;
   height: 9vw;
   display: flex;
   justify-content: space-between;
@@ -51,6 +51,14 @@ ul {
 .nav-bar p {
   font-size: 1.2rem;
   margin-top: 0.5rem;
+  color: var(--text-color);
+}
+
+.menu-option {
+  border: solid white;
+}
+
+.menu-option a {
   color: var(--text-color);
 }
 
