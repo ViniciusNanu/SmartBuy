@@ -1,0 +1,292 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+.header-capa {
+    text-align: center;
+    background-image: url('images/capa4.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    color: white; /* Cor do texto */
+    padding: 20px;
+    position: relative; /* Permite posicionar elementos internos */
+}
+
+.header-capa::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.header-capa h1 {
+    position: relative; /* Para garantir que o texto fique acima da camada escura */
+    z-index: 2; /* Coloca o texto acima da camada escura */
+    font-family: "Sofia", sans-serif;
+    font-size:60px;
+    color: white
+}
+
+.header-capa p {
+    position: relative; /* Para garantir que o texto fique acima da camada escura */
+    z-index: 2; /* Coloca o texto acima da camada escura */
+    font-family: "Sofia", sans-serif;
+    font-size:30px;
+    color: white
+}
+
+/* Estilo para o banner */
+.banner {
+    background-image: linear-gradient(to right top, #133d7f, #003c9e, #0038ba, #002dd4, #1b12eb);
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-transform: uppercase; /* Coloca o texto em maiúsculas */
+    position: fixed; /* Fixar no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o banner fique acima de outros conteúdos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    animation: moveRight 5s infinite; /* Animação contínua da esquerda para a direita */
+}
+
+/* Animação para mover o texto da esquerda para a direita */
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%); /* Começa fora da tela, à esquerda */
+    }
+    50% {
+        transform: translateX(0); /* Chega no centro da tela */
+    }
+    100% {
+        transform: translateX(100%); /* Vai para fora da tela, à direita */
+    }
+}
+
+
+
+/* Caso queira adicionar uma transição de hover */
+.banner:hover {
+    background-color: #e67e22; /* Alterar cor ao passar o mouse */
+}
+
+
+header nav {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+ }
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color:#4c4c4c; /* Cor do link */
+    font-weight:bolder;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+    color:rgb(171, 34, 34)
+}
+
+
+h2 {
+    text-align: center;
+    color: rgb(71, 71, 167);
+}
+
+#catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Adicionando transições */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Levanta o card ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+
+    .header-capa{
+        text-align: center;
+        background-image: url('images/capa3.avif'); /* Substitua pelo caminho da sua imagem */
+        background-size: cover; /* Faz com que a imagem cubra toda a área */
+        background-position: center; /* Centraliza a imagem */
+        color: white; /* Cor do texto */
+        padding: 20px;
+        position: relative; /* Permite posicionar elementos internos */
+    }
+    
+    .header-capa h1 {
+       visibility: hidden;
+    }
+
+
+    .header-capa img{
+         width:50 px;
+    }
+
+    .header-capa p {
+       
+        font-size:20px;
+        
+    }
+
+
+    header nav ul li {
+        display: block; /* Coloca os links um embaixo do outro em telas pequenas */
+        margin: 5px 0;
+    }
+
+    .card {
+        padding: 15px; /* Aumenta o padding em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-capa h1 {
+        font-size: 1.5em; /* Ajusta o tamanho do título */
+    }
+
+    .header-capa img {
+        width: 400px;
+    }
+
+    .header-capa p {
+       
+        font-size:15px;
+        
+    }
+
+    .card h2 {
+        font-size: 1em; /* Ajusta o tamanho do nome do modelo */
+    }
+
+    .card p {
+        font-size: 0.9em; /* Ajusta o tamanho do texto */
+    }
+}
+
+
+
+.main_footer
+      { 
+    background-color:#00b0d9; 
+    color:#fff; 
+    font-size:0.875em; 
+   }
+   
+   .main_footer .content { float:left; width:90%; margin:0 5%; padding: 3em 0; }
+   .container { float:left; width:100%; }
+   
+   .colfooter { 
+   
+    width:100%; 
+    height:auto; 
+    float:left; 
+    margin-bottom:2em;
+   
+   }
+   
+   .colfooter ul        { width:100%; float:left; }
+   .colfooter ul li     { padding:0.2em 0em; }
+   .colfooter ul li a   { text-decoration:none; color:#ffffff; font-size:1em; }
+   .colfooter ul li a i { font-size:0.5em; }
+   .colfooter ul li a:hover { text-decoration:underline; }
+   
+   .colfooter .titleFooter   { 
+   
+    font-family:'open_sansregular'; 
+    font-size:1.3em; 
+    color:#ffffff; 
+    padding-bottom: 0.5em; 
+    margin-bottom:0.5em; 
+    border-bottom:1px #4ec0db solid;
+   }
+   
+   .colfooter p  { font-family:'open_sanslight'; color:#ffffff; font-size:1em; height:25px; } 
+   
+   .botao{
+   
+     padding: 10px 12px;
+     color: #fff;
+     font-family: 'open_sansregular';
+     letter-spacing:2px;
+     text-align: center;
+     position: relative;
+     text-decoration: none;
+     display:inline-block;
+     margin-right:7px;
+     
+   }
+   
+   
+   .botao{
+   
+       font-size:1em;
+       color:#ffffff;
+       text-align:center;
+       font-family:'open_sansregular';
+       border:1px solid #ffffff;
+       
+       
+   }
+   
+   
+   .main_footer_copy { background-color:#01a2c8; width:100%; float:left; text-align:center; padding:1.5em 0em; }
+   .main_footer_copy p { font-family:'open_sanslight'; font-size:1em; color:#e1e0e0; height:20px; }
+   .main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+   .main_footer_copy .by   { font-size:0.96em; }
+   .main_footer_copy .by a       { color:#fff; text-decoration:none; }
+   .main_footer_copy .by a:hover { text-decoration:underline; }
+   .main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+   
+   /*Responsivo*/
+   /*768PX BREAKPOINT*/
+   @media (min-width:48em){
+   
+   .colfooter  { width:30%; margin-right:5%; margin-bottom:0; }
+   .colfooter:nth-of-type(3n+0){ margin-right:0; border-right:0;}
+   
+   }
