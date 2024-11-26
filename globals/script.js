@@ -34,70 +34,70 @@ const products = [{
     image: "images/xiaomi5.webp"
   },
   {
-    id: 5,
+    id: 6,
     name: "Smartphone Xiaomi Redmi Note 13",
     brand: "Marca Xiaomi",
     price: 4820,
     image: "images/xiaomi6.webp"
   },
   {
-    id: 5,
+    id: 7,
     name: "Apple iPhone 15 (128 GB) Rosa",
     brand: "Marca Apple",
     price: 6830,
     image: "images/apple1.webp"
   },
   {
-    id: 5,
+    id: 8,
     name: "iPhone 12 Apple 64GB Preto",
     brand: "Marca Apple",
     price: 7150,
     image: "images/apple2.webp"
   },
   {
-    id: 5,
+    id: 9,
     name: "Smartphone Xiaomi Redmi Note 13 ",
     brand: "Marca Xiaomi",
     price: 3450,
     image: "images/apple3.webp"
   },
   {
-    id: 5,
+    id: 10,
     name: "Smartphone Xiaomi Redmi 12 256GB",
     brand: "Marca Xiaomi",
     price: 4150,
     image: "images/apple4.webp"
   },
   {
-    id: 5,
+    id: 11,
     name: "Apple iPhone 14 (128 GB) Meia noite ",
     brand: "Marca Apple",
     price: 8850,
     image: "images/apple5.webp"
   },
   {
-    id: 5,
+    id: 12,
     name: "Apple iPhone 13 (128 GB) RED",
     brand: "Marca Apple",
     price: 6250,
     image: "images/apple6.webp"
   },
   {
-    id: 5,
+    id: 13,
     name: "Smartphone Xiaomi POCO X6 Pro 5G 512GB",
     brand: "Marca Xiaomi",
     price: 5850,
     image: "images/xiaomi7.webp"
   },
   {
-    id: 5,
+    id: 14,
     name: "Apple iPhone 16 Pro Max (256 GB) Titânio preto",
     brand: "Marca Apple",
     price: 8850,
     image: "images/apple7.webp"
   },
   {
-    id: 5,
+    id: 15,
     name: "Apple iPhone 15 (128 GB) Verde",
     brand: "Marca Apple",
     price: 7950,
@@ -145,3 +145,32 @@ document.getElementById('brandFilter').addEventListener('change', filterProducts
 document.getElementById('priceFilter').addEventListener('change', filterProducts);
 
 displayProducts(products);
+
+
+
+function displayProducts(filteredProducts) {
+  const catalog = document.getElementById('catalog');
+  catalog.innerHTML = '';
+
+  filteredProducts.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">  
+      <h2>${product.name}</h2>
+      <p>Marca: ${product.brand}</p>
+      <p>Preço: R$${product.price}</p>
+      <button class="buy-btn" data-product-id="${product.id}">Adicionar ao carrinho</button>
+    `;
+    catalog.appendChild(card);
+
+   
+    card.querySelector('.buy-btn').addEventListener('click', () => {
+      addToCart(product.id);
+    });
+  });
+}
+
+function addToCart(productId) {
+    console.log(`Adicionando produto com ID ${productId} ao carrinho`);
+}

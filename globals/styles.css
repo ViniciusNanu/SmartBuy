@@ -6,11 +6,11 @@ body {
 
 .header-capa {
   text-align: center;
-  background-image: url('../images/capa4.jpg');
+  background-image: url('../images/capa_inicio.png');
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 20px;
+  padding: 180px 0 0;
 }
 
 .header-capa h1 {
@@ -30,12 +30,12 @@ body {
   background-image: linear-gradient(to right top, #133d7f, #003c9e, #0038ba, #002dd4, #1b12eb);
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
   text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 80%;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: moveRight 5s infinite;
@@ -61,12 +61,12 @@ body {
 
 header nav {
   text-align: center;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 header nav ul {
   list-style-type: none;
-  padding: 0;
+  
 }
 
 header nav ul li {
@@ -88,12 +88,17 @@ header nav ul li a:hover {
 h2 {
   text-align: center;
   color: rgb(71, 71, 167);
+  padding: 40px 0 20px;
+
+
 }
 
 #catalog {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+  padding: 50px 0 15px;
+
 }
 
 .card {
@@ -124,9 +129,28 @@ h2 {
   margin: 5px 0;
 }
 
+.buy-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+.buy-btn:hover {
+  
+  background-color: #ee1f1f;
+}
+
+
+
 @media (max-width: 768px) {
   .header-capa {
-    background-image: url('images/capa3.avif');
+    background-image: url('../images/capa1.png');
   }
 
   .header-capa h1 {
@@ -134,7 +158,7 @@ h2 {
   }
 
   .header-capa img {
-    width: 50px;
+    width: 350px;
   }
 
   .header-capa p {
@@ -145,6 +169,8 @@ h2 {
     display: block;
     margin: 5px 0;
   }
+
+  
 
   .card {
     padding: 15px;
@@ -177,13 +203,13 @@ h2 {
   background-color: #00b0d9;
   color: #fff;
   font-size: 0.875em;
-}
+  }
 
 .main_footer .content {
   float: left;
   width: 90%;
   margin: 0 5%;
-  padding: 3em 0;
+  padding: 1em 0;
 }
 
 .container {
@@ -205,6 +231,7 @@ h2 {
 
 .colfooter ul li {
   padding: 0.2em 0em;
+  list-style-type: none;
 }
 
 .colfooter ul li a {
