@@ -25,7 +25,6 @@ header {
 
 .logo img {
   width: 7vw;
-
   flex: 1;
 }
 
@@ -52,10 +51,6 @@ ul {
   font-size: 1.2rem;
   margin-top: 0.5rem;
   color: var(--text-color);
-}
-
-.menu-option {
-  border: solid white;
 }
 
 .menu-option a {
