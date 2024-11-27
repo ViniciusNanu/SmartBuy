@@ -12,21 +12,66 @@ main{
 .productDescription{
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    text-align: left;
+}
+
+.productDescription > h3 {
+    width: 25%;
+}
+
+.productDetail{
+    display: flex;
+    text-align: left;
+}
+
+.productDetail > p {
+    width: 25%;
+}
+
+.productDetail  img{
+    height: 3rem;
 }
 
 .imageSubtitle{
     display: flex;
+    width: 25%;
 }
 
 .buttonCarrinho{
     display: flex;
-    justify-content: space-between;
-    width: 60px;
-    background-color: grey;
-    border-radius: 5px;
-    height: 40px;
+    justify-content:left;
+    width: 25%;  
+    height: 40px;    
     
+}
+
+.buttonCarrinho > button {
+    width:10%;
+    background-color: grey;
+    border-top-left-radius: 1rem;
+    border: none;
+    border-bottom-left-radius: 1rem;
+}
+
+.buttonCarrinho > button:first-of-type {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+.buttonCarrinho > button:last-of-type {
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.buttonCarrinho > span {
+    background-color: grey;
+    width: 5%;
+    align-content: center;
+    justify-content: center;
 }
 
 .productDetail{
@@ -34,13 +79,13 @@ main{
     justify-content: space-between;
 }
 
-button{
+/* button{
     background-color: grey;
     border:none;
     border-radius: 40px;
     
  
-}
+} */
 
 button:hover{
     background-color: #2980b9;
