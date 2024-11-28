@@ -1,117 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/carrinho/styles.css">
-  <title>Carrinho</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho</title>
 </head>
-
 <body>
-  <header>
-    <div class="header-capa">
-      <h1>SmartBuy</h1>
-      <img src="images/logo preto.png">
-      <p>Aqui a sua compra é certa!!!</p>
-    </div>
+    <header>
+        <figure class="logo">
+          <img src="/images/movel.png" alt="logo Smartbuy" />
+        </figure>
+    
+        <nav class="nav-bar">
+          <ul>
+            <li class="nav-title">SmartBuy</li>
+            <p>Aqui a sua compra é certa!!!</p>
+          </ul>
+        </nav>
+    
+        <div class="menu-option">
+          <a href="">Home</a>
+          <a href="">Catálogo</a>
+          <a href="">Comparador</a>
+          <a href="">Comparação</a>
+          <a href="">Carrinho</a>
+          <a href="">Checkout</a>
+        </div>
+    </header>    
+    
+    <main>
+        
+        <div class="carrinho">
+            <h1>Carrinho</h1>
+        
+            <section class="productDescription">
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Catálogo</a></li>
-        <li><a href="#">Comparador</a></li>
-        <li><a href="#">Comparação</a></li>
-        <li><a href="#">Carrinho</a></li>
-        <li><a href="#">Checkout</a></li>
-        <li><a href="#">Cadastro do Usuário</a></li>
-      </ul>
-    </nav>
-  </header>
+                <h3 >Produto</h3>
+                <h3>Preço</h3>
+                <h3>Quantidade</h3>
+                <h3>Total</h3>
 
-  <main>
-    <h1>Carrinho</h1>
+            </section>  
+            
+            <section class="products">
+                <section class="productDetail">
 
-    <section class="productDescription">
-      <h3>Produto</h3>
-      <h3>Preço</h3>
-      <h3>Quantidade</h3>
-      <h3>Total</h3>
-    </section>
+                    <div class="imageSubtitle">
+                        <img src="/images/apple2.webp">
 
-    <section class="productDetail">
-      <div class="imageSubtitle">
-        <img src="/images/apple2.webp">
-        <p>Iphone 16 pro 128 GB – Titânio branco</p>
-      </div>
+                        <p>Iphone 16 pro 128 GB – <br>
+                            Titânio branco</p>
+                    </div>
 
-      <p>R$ 10.499,00</p>
+                    <p>R$ 10.499,00</p>
 
-      <div class="buttonCarrinho">
-        <button>-</button>
-        <p>2</p>
-        <button>+</button>
-      </div>
+                    <div class="buttonCarrinho">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                    </div>
+                    
+                    <p>R$ 10.499,00</p>
+                    
 
-      <p>R$ 10.499,00</p>
-    </section>
+                </section>
 
-    <section class="productDetail">
-      <div class="imageSubtitle">
-        <img src="/images/apple2.webp">
-        <p>Iphone 16 pro 128 GB – Titânio branco</p>
-      </div>
+                <section class="productDetail">
 
-      <p>R$ 10.499,00</p>
+                    <div class="imageSubtitle">
+                        <img src="/images/apple2.webp">
 
-      <div class="buttonCarrinho">
-        <button>-</button>
-        <p>2</p>
-        <button>+</button>
-      </div>
+                        <p>Iphone 16 pro 128 GB – 
+                            Titânio branco</p>
+                    </div>
 
-      <p>R$ 10.499,00</p>
-    </section>
-  </main>
+                    <p>R$ 10.499,00</p>
 
-  <footer class="main_footer container">
-    <div class="content">
-      <div class="colfooter">
-        <h3 class="titleFooter">Menu</h3>
+                    <div class="buttonCarrinho">
+                            <button>-</button>
+                            <span>2</span>
+                            <button>+</button>
+                    </div>
+                    
+                    <p>R$ 10.499,00</p>
+                    
 
-        <ul>
-          <li><a href="#" title="Página Inícial">Página Inícial</a></li>
-          <li><a href="#" title="Carrinho">Catalogo</a></li>
-          <li><a href="#" title="Comparação">Comparação</a></li>
-          <li><a href="#" title="Carrinho">Carrinho</a></li>
-          <li><a href="#" title="Checkout">Checkout</a></li>
-          <li><a href="#" title="Checkout">Cadastro de Usuário</a></li>
-        </ul>
-      </div>
+                </section>
+            </section>
 
-      <div class="colfooter">
-        <h3 class="titleFooter">Contato</h3>
-        <p><i class="icon icon-mail"></i>smartBuy@gmail.com</p>
-        <p><i class="icon icon-phone"></i>(21) 86439-8645</p>
-        <p><i class="icon icon-whatsapp"></i>(21) 998564-8751</p>
-      </div>
+            <section class="priceInformations" >
+                <div>Resumo da Compra</div>
+                <div>Total: <span>R$<span>26.497,00</span></span></div>
+            </section>
+            <div class="confirmation">
+                <button class="confirmationButton">FINALIZAR COMPRA</button>
+            </div>
+        </div>
+    </main>
 
-      <div class="colfooter">
-        <h3 class="titleFooter">Redes Sociais</h3>
-        <img src="images/insta.png" width="30">
-        <img src="images/face.png" width="30">
-        <img src="images/what.png" width="30">
-      </div>
-
-      <div class="clear"></div>
-    </div>
-
-    <div class="main_footer_copy">
-      <img src="images/logo preto.png" alt="logo" width="150px">
-      <p class="m-b-footer"> SmartBuy - 2024. Todos os direitos reservados.</p>
-      <p></i>Desenvolvido por: Projeto integrador Grupo 1</a></p>
-    </div>
-  </footer>
+    <footer class="main_footer container">
+        <div class="content">
+          <div class="colfooter">
+            <h3 class="titleFooter">Menu</h3>
+      
+            <ul>
+              <li><a href="index.html" title="Página Inicial">Página Inícial</a></li>
+              <li><a href="comparador.html">Comparador</a></li>
+              <li><a href="comparacao.html" title="Comparação">Comparação</a></li>
+              <li><a href="carrinho/carrinho.html" title="Carrinho">Carrinho</a></li>
+              <li><a href="checkout.html" title="Checkout">Checkout</a></li>
+              <li><a href="cadastro/cadastro.html" title="Cadastro de Usuário">Cadastro de Usuário</a></li>
+            </ul>
+          </div>
+      
+          <div class="colfooter">
+            <h3 class="titleFooter">Contato</h3>
+            <p><i class="icon icon-mail"></i>smartBuy@gmail.com</p>
+            <p><i class="icon icon-phone"></i>(21) 986439-8645</p>
+            <p><i class="icon icon-whatsapp"></i>(21) 998564-8751</p>
+          </div>
+      
+          <div class="colfooter">
+            <h3 class="titleFooter">Redes Sociais</h3>
+            <img src="../images/insta.png" width="30">
+            <img src="../images/face.png" width="30">
+            <img src="../images/what.png" width="30">
+          </div>
+      
+          <div class="clear"></div>
+        </div>
+      
+        <div class="main_footer_copy">
+          <img src="../images/logo preto.png" alt="logo" width="150px">
+          <p class="m-b-footer"> SmartBuy - 2024. Todos os direitos reservados.</p>
+          <p></i>Desenvolvido por: Projeto integrador Grupo 1</a></p>
+        </div>
+      </footer> 
+      <script>
+        // Aqui você coloca o JavaScript fornecido
+        document.addEventListener("DOMContentLoaded", function () {
+          const cartItems = document.querySelectorAll(".productDetail");
+          const totalDisplay = document.querySelector(".priceInformations span span");
+          const confirmationButton = document.querySelector(".confirmationButton");
+    
+          function updateCart() {
+            let totalCartValue = 0;
+            let totalQuantity = 0;
+    
+            cartItems.forEach((item) => {
+              const priceElement = item.querySelector("p:nth-of-type(2)");
+              const quantityElement = item.querySelector("span");
+              const totalElement = item.querySelector("p:nth-of-type(3)");
+    
+              const unitPrice = parseFloat(
+                priceElement.textContent.replace("R$", "").replace(".", "").replace(",", ".")
+              );
+              const quantity = parseInt(quantityElement.textContent);
+    
+              const totalItemValue = unitPrice * quantity;
+    
+              totalElement.textContent = `R$ ${totalItemValue.toLocaleString("pt-BR", {
+                minimumFractionDigits: 2,
+              })}`;
+    
+              totalCartValue += totalItemValue;
+              totalQuantity += quantity;
+            });
+    
+            totalDisplay.textContent = totalCartValue.toLocaleString("pt-BR", {
+              minimumFractionDigits: 2,
+            });
+    
+            if (totalQuantity > 0) {
+              confirmationButton.style.display = "block";
+            } else {
+              confirmationButton.style.display = "none";
+            }
+          }
+    
+          cartItems.forEach((item) => {
+            const decrementButton = item.querySelector(".buttonCarrinho button:first-of-type");
+            const incrementButton = item.querySelector(".buttonCarrinho button:last-of-type");
+            const quantityElement = item.querySelector("span");
+    
+            decrementButton.addEventListener("click", () => {
+              let currentQuantity = parseInt(quantityElement.textContent);
+              if (currentQuantity > 0) {
+                quantityElement.textContent = currentQuantity - 1;
+                updateCart();
+              }
+            });
+    
+            incrementButton.addEventListener("click", () => {
+              let currentQuantity = parseInt(quantityElement.textContent);
+              quantityElement.textContent = currentQuantity + 1;
+              updateCart();
+            });
+          });
+    
+          updateCart();
+        });
+      </script>   
+      </html>   
 </body>
-
 </html>
