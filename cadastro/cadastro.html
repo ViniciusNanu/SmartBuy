@@ -1,66 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cadastro/cadastro.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/cadastro/styles.css" />
-  <title>Cadastre-se</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"
+    />
+    <link rel="icon" type="image" href="/images/movel.png" />
 
-<body>
-  <header>
-    <figure class="logo">
-      <img src="/images/movel.png" alt="logo Smartbuy" />
-    </figure>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SmartBuy - Cadastre-se</title>
+  </head>
 
-    <nav class="nav-bar">
-      <ul>
-        <li class="nav-title">SmartBuy</li>
-        <p>Aqui a sua compra é certa!!!</p>
-      </ul>
-    </nav>
-
-    <div class="menu-option">
-      <a href="">Home</a>
-      <a href="">Catálogo</a>
-      <a href="">Comparador</a>
-      <a href="">Comparação</a>
-      <a href="">Carrinho</a>
-      <a href="">Checkout</a>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <div class="area-cadastro">
-        <h2>Cadastre-se</h2>
-        <h3>Já tem cadastro? <span>Faça seu login</span></h3>
+  <body>
+    <header>
+      <div class="header-capa">
+        <h1>SmartBuy</h1>
+        <img src="/images/logo_sb_branco-removebg-preview.png" />
+        <p class="banner">Aqui a sua compra é certa!!!</p>
       </div>
 
-      <div class="formulario">
-        <form action="">
-          <label for="nome">Nome e Sobrenome</label>
-          <input type="text" id="nome" placeholder="Digite seu nome completo" required />
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="/comparador/comparador.html">Comparador</a></li>
+          <li><a href="/comparacao/comparacao.html">Comparação</a></li>
+          <li><a href="/carrinho/carrinho.html">Carrinho</a></li>
+          <li><a href="/">Checkout</a></li>
+          <li><a href="/cadastro/cadastro.html">Cadastro do Usuário</a></li>
+        </ul>
+      </nav>
 
-          <label for="nome">Nome de Usuário</label>
-          <input type="text" id="nome" placeholder="Digite seu nome de usuário" required />
+      <h2>Cadastre-se ou, se já tiver uma conta, faça login</h2>
+    </header>
 
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="ex: maria@gmail.com" required />
+    <main>
+      <section>
 
-          <label for="senha">Senha</label>
-          <input type="password" id="senha" placeholder="Mínimo 6 caracteres" required />
-
-          <div class="form-button">
-            <button type="submit">Efetuar cadastro</button>
+        <div class="container">
+          <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <button id="btnSignin">Login</button>
+            <button id="btnSignup">Cadastre-se</button>
           </div>
-        </form>
+
+          <form id="signin">
+            <input type="email" placeholder="E-mail" required />
+            <i class="fa-solid fa-envelope"></i>
+            <input type="password" placeholder="Senha" required />
+            <i class="fa-solid fa-lock"></i>
+            <div class="div-Check">
+              <input type="checkbox" />
+              <span>Lembrar Senha</span>
+            </div>
+            <button type="submit">Entrar</button>
+          </form>
+
+          <form id="signup">
+            <input type="email" placeholder="E-mail" required />
+            <i class="fa-solid fa-envelope"></i>
+            <input type="password" placeholder="Senha" required />
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Repetir Senha" />
+            <i class="fas fa-lock iPassword2"></i>
+            <div class="div-Check">
+              <input type="checkbox" />
+              <span>Termos</span>
+            </div>
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="content">
+        <div class="colfooter">
+          <h3 class="titleFooter">Menu</h3>
+    
+          <ul>
+            <li><a href="#" title="Página Inicial">Página Inícial</a></li>
+            <li><a href="#" title="Carrinho">Catalogo</a></li>
+            <li><a href="#" title="Comparação">Comparação</a></li>
+            <li><a href="#" title="Carrinho">Carrinho</a></li>
+            <li><a href="#" title="Checkout">Checkout</a></li>
+            <li><a href="#" title="Checkout">Cadastro de Usuário</a></li>
+          </ul>
+        </div>
+    
+        <div class="colfooter">
+          <h3 class="titleFooter">Contato</h3>
+          <p><i class="icon icon-mail"></i>smartBuy@gmail.com</p>
+          <p><i class="icon icon-phone"></i>(21) 86439-8645</p>
+          <p><i class="icon icon-whatsapp"></i>(21) 998564-8751</p>
+        </div>
+    
+        <div class="colfooter">
+          <h3 class="titleFooter">Redes Sociais</h3>
+          <img src="/images/insta.png" width="30">
+          <img src="/images/face.png" width="30">
+          <img src="/images/what.png" width="30">
+        </div>
+    
+        <div class="clear"></div>
       </div>
-    </section>
-  </main>
-
-  <footer></footer>
-</body>
-
+    
+      <div class="footer-container_copy">
+        <img src="/images/logo preto.png" alt="logo" width="150px">
+        <p class="m-b-footer"> SmartBuy - 2024. Todos os direitos reservados.</p>
+        <p></i>Desenvolvido por: Projeto integrador Grupo 1</a></p>
+      </div>
+    </footer>
+  </body>
 </html>
