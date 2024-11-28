@@ -1,0 +1,346 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+
+.header-capa {
+    text-align: center;
+    background-image: url('../images/capa_inicio.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 180px 0 0;
+}
+
+.header-capa h1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.header-capa p {
+    position: relative;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    color: white
+  }
+  
+  .banner {
+    background-image: linear-gradient(to right top, #133d7f, #003c9e, #0038ba, #002dd4, #1b12eb);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: moveRight 5s infinite;
+  }
+
+  @keyframes moveRight {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    50% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .banner:hover {
+    background-color: #e67e22;
+  }
+  
+  header nav {
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #4c4c4c;
+    font-weight: bolder;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(171, 34, 34)
+  }
+
+h2 {
+    text-align: center;
+    color: rgb(71, 71, 167);
+    padding: 40px 0 20px;
+}
+
+.sub-banner {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Seção de Comparação */
+.comparison-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+}
+
+.cart-section {
+    text-align: center;
+}
+
+.cart-icon {
+    width: 50px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.phones-comparison {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.phone-card {
+    width: 150px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.phone-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.phone-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.phone-name {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.phone-price {
+    background-color: #133d7f;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Tabela de Comparação */
+.comparison-table {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #133d7f;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Footer */
+.main_footer {
+    background-color: #00b0d9;
+    color: #fff;
+    font-size: 0.875em;
+    }
+  
+  .main_footer .content {
+    float: left;
+    width: 90%;
+    margin: 0 5%;
+    padding: 1em 0;
+  }
+  
+  .container {
+    float: left;
+    width: 100%;
+  }
+  
+  .colfooter {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 2em;
+  }
+  
+  .colfooter ul {
+    width: 100%;
+    float: left;
+  }
+  
+  .colfooter ul li {
+    padding: 0.2em 0em;
+    list-style-type: none;
+  }
+  
+  .colfooter ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+  }
+  
+  .colfooter ul li a i {
+    font-size: 0.5em;
+  }
+  
+  .colfooter ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .colfooter .titleFooter {
+    font-family: 'open_sansregular', sans-serif;
+    font-size: 1.3em;
+    color: #ffffff;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px #4ec0db solid;
+  }
+  
+  .colfooter p {
+    font-family: 'open_sanslight', sans-serif;
+    color: #ffffff;
+    font-size: 1em;
+    height: 25px;
+  }
+  
+  .botao {
+    padding: 10px 12px;
+    color: #fff;
+    font-family: 'open_sansregular', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 7px;
+  }
+  
+  .botao {
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'open_sansregular', sans-serif;
+    border: 1px solid #ffffff;
+  }
+  
+  .main_footer_copy {
+    background-color: #01a2c8;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 1.5em 0em;
+  }
+  
+  .main_footer_copy p {
+    font-family: 'open_sanslight', sans-serif;
+    font-size: 1em;
+    color: #e1e0e0;
+    height: 20px;
+  }
+  
+  .main_footer_copy .m-b-footer {
+    margin-bottom: 0.5em;
+  }
+  
+  .main_footer_copy .by {
+    font-size: 0.96em;
+  }
+  
+  .main_footer_copy .by a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main_footer_copy .by a:hover {
+    text-decoration: underline;
+  }
+  
+  .main_footer_copy .by i {
+    font-size: 0.96em;
+    margin-right: 3px;
+    color: #e82626;
+  }
+  
+  @media (min-width:48em) {
+    .colfooter {
+      width: 30%;
+      margin-right: 5%;
+      margin-bottom: 0;
+    }
+  
+    .colfooter:nth-of-type(3n+0) {
+      margin-right: 0;
+      border-right: 0;
+    }
+  }
