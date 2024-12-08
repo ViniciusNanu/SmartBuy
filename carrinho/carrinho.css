@@ -83,31 +83,36 @@ main{
 .productDetail{
     display: flex;
     text-align: left;
+    align-items: center;
 }
 
 .productDetail > p {
     width: 25%;
+    font-size: 1rem;
 }
 
-.productDetail  img{
+/* .productDetail  img{
     height: 3rem;
-}
+} */
 
 .imageSubtitle{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 25%;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
 }
 
 .imageSubtitle > img{
     border: none;
-
-    height: 7rem;
-    object-fit: contain;
+    width: 5rem;
+    object-fit: cover;
 }
 
 .imageSubtitle > p{
    width: 7rem;
-   margin-left: 3rem;
 }
 
 .buttonCarrinho{
@@ -115,11 +120,9 @@ main{
     justify-content:left;
     width: 25%;  
     height: 40px;    
-    
 }
 
 .buttonCarrinho > button {
-    width:10%;
     background-color: #cecece;
     border-top-left-radius: 1rem;
     border: none;
@@ -127,6 +130,7 @@ main{
 }
 
 .buttonCarrinho > button:first-of-type {
+    width: 1rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border-top-right-radius: 0rem;
@@ -134,6 +138,7 @@ main{
 }
 
 .buttonCarrinho > button:last-of-type {
+    width: 1rem;
     border-top-left-radius: 0rem;
     border-bottom-left-radius: 0rem;
     border-top-right-radius: 1rem;
@@ -142,7 +147,7 @@ main{
 
 .buttonCarrinho > span {
     background-color: #cecece;
-    width: 5%;
+    width: fit-content;
     align-content: center;
     justify-content: center;
 }
@@ -153,7 +158,9 @@ main{
 }
 
 .priceInformations {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
 }
 
@@ -201,6 +208,40 @@ main{
     color: white;
     font-size: 1.2rem;
     /* display: none; */
+}
+
+@media (max-width: 480px) {
+
+  .productDescription > h3 {
+    text-align: center;
+  }
+
+  .productDetail > p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .productDetail > div {
+    justify-content: center;
+  }
+
+  .priceInformations {
+    justify-content: center;
+  }
+
+  .priceInformations > div:first-of-type{
+    width: 100%;
+    text-align: center;
+  }
+
+  .priceInformations > div:last-of-type{
+    width: 100%;
+    text-align: center;
+  }
+
+  .confirmation {
+    justify-content: center;
+  }
 }
 
 
