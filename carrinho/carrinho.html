@@ -25,7 +25,7 @@
           <a href="../comparador/comparador.html">Comparador</a>
           <a href="../comparacao/comparacao.html">Comparação</a>
           <a href="carrinho.html">Carrinho</a>
-          <a href="">Checkout</a>
+          <a href="../cadastro/cadastro.html">Checkout</a>
         </div>
     </header>    
     
@@ -43,58 +43,17 @@
 
             </section>  
             
-            <section class="products">
-                <section class="productDetail">
+            <section id="products" class="products"></section>
 
-                    <div class="imageSubtitle">
-                        <img src="/images/apple2.webp">
-
-                        <p>Iphone 16 pro 128 GB – <br>
-                            Titânio branco</p>
-                    </div>
-
-                    <p>R$ 10.499,00</p>
-
-                    <div class="buttonCarrinho">
-                            <button>-</button>
-                            <span>1</span>
-                            <button>+</button>
-                    </div>
-                    
-                    <p>R$ 10.499,00</p>
-                    
-
-                </section>
-
-                <section class="productDetail">
-
-                    <div class="imageSubtitle">
-                        <img src="/images/apple2.webp">
-
-                        <p>Iphone 16 pro 128 GB – 
-                            Titânio branco</p>
-                    </div>
-
-                    <p>R$ 10.499,00</p>
-
-                    <div class="buttonCarrinho">
-                            <button>-</button>
-                            <span>2</span>
-                            <button>+</button>
-                    </div>
-                    
-                    <p>R$ 10.499,00</p>
-                    
-
-                </section>
+            <section class="priceInformations">
+              <div>Resumo da Compra</div>
+              <div>Total: R$ <span id="totalPrice">0.00</span></div>
             </section>
-
-            <section class="priceInformations" >
-                <div>Resumo da Compra</div>
-                <div>Total: <span>R$<span>26.497,00</span></span></div>
-            </section>
+          
             <div class="confirmation">
-                <button class="confirmationButton">FINALIZAR COMPRA</button>
+              <button class="confirmationButton" onclick="window.location.assign('../cadastro/cadastro.html')">FINALIZAR COMPRA</button>
+
+                
             </div>
         </div>
     </main>
@@ -137,71 +96,8 @@
           <p></i>Desenvolvido por: Projeto integrador Grupo 1</a></p>
         </div>
       </footer> 
-      <!-- <script>
-        
-        document.addEventListener("DOMContentLoaded", function () {
-          const cartItems = document.querySelectorAll(".productDetail");
-          const totalDisplay = document.querySelector(".priceInformations span span");
-          const confirmationButton = document.querySelector(".confirmationButton");
-    
-          function updateCart() {
-            let totalCartValue = 0;
-            let totalQuantity = 0;
-    
-            cartItems.forEach((item) => {
-              const priceElement = item.querySelector("p:nth-of-type(2)");
-              const quantityElement = item.querySelector("span");
-              const totalElement = item.querySelector("p:nth-of-type(3)");
-    
-              const unitPrice = parseFloat(
-                priceElement.textContent.replace("R$", "").replace(".", "").replace(",", ".")
-              );
-              const quantity = parseInt(quantityElement.textContent);
-    
-              const totalItemValue = unitPrice * quantity;
-    
-              totalElement.textContent = `R$ ${totalItemValue.toLocaleString("pt-BR", {
-                minimumFractionDigits: 2,
-              })}`;
-    
-              totalCartValue += totalItemValue;
-              totalQuantity += quantity;
-            });
-    
-            totalDisplay.textContent = totalCartValue.toLocaleString("pt-BR", {
-              minimumFractionDigits: 2,
-            });
-    
-            if (totalQuantity > 0) {
-              confirmationButton.style.display = "block";
-            } else {
-              confirmationButton.style.display = "none";
-            }
-          }
-    
-          cartItems.forEach((item) => {
-            const decrementButton = item.querySelector(".buttonCarrinho button:first-of-type");
-            const incrementButton = item.querySelector(".buttonCarrinho button:last-of-type");
-            const quantityElement = item.querySelector("span");
-    
-            decrementButton.addEventListener("click", () => {
-              let currentQuantity = parseInt(quantityElement.textContent);
-              if (currentQuantity > 0) {
-                quantityElement.textContent = currentQuantity - 1;
-                updateCart();
-              }
-            });
-    
-            incrementButton.addEventListener("click", () => {
-              let currentQuantity = parseInt(quantityElement.textContent);
-              quantityElement.textContent = currentQuantity + 1;
-              updateCart();
-            });
-          });
-    
-          updateCart();
-        }); -->
-      </script>   
+      <script type="module" src="carrinho.js"></script> 
+      <script type="module" src="globals/script.js"></script>  
       </html>   
 </body>
 </html>
