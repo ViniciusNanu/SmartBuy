@@ -21,90 +21,90 @@ const products = [{
     price: 2730,
     image: "images/xiaomi3.webp"
   },
-  {
-    id: 4,
-    name: "Smartphone Redmi 13C",
-    brand: "Marca Xiaomi",
-    price: 4600,
-    image: "images/xiaomi4.webp"
-  },
-  {
-    id: 5,
-    name: "Smartphone Xiaomi Redmi Note 50",
-    brand: "Marca Xiaomi",
-    price: 5450,
-    image: "images/xiaomi5.webp"
-  },
-  {
-    id: 6,
-    name: "Smartphone Xiaomi Redmi Note 13",
-    brand: "Marca Xiaomi",
-    price: 4820,
-    image: "images/xiaomi6.webp"
-  },
-  {
-    id: 7,
-    name: "Apple iPhone 15 (128 GB) Rosa",
-    brand: "Marca Apple",
-    price: 6830,
-    image: "images/apple1.webp"
-  },
-  {
-    id: 8,
-    name: "iPhone 12 Apple 64GB Preto",
-    brand: "Marca Apple",
-    price: 7150,
-    image: "images/apple2.webp"
-  },
-  {
-    id: 9,
-    name: "Smartphone Xiaomi Redmi Note 13 ",
-    brand: "Marca Xiaomi",
-    price: 3450,
-    image: "images/apple3.webp"
-  },
-  {
-    id: 10,
-    name: "Apple iPhone 12 (128 GB) Meia noite ",
-    brand: "Marca Apple",
-    price: 4150,
-    image: "images/apple4.webp"
-  },
-  {
-    id: 11,
-    name: "Apple iPhone 14 (128 GB) Meia noite ",
-    brand: "Marca Apple",
-    price: 8850,
-    image: "images/apple5.webp"
-  },
-  {
-    id: 12,
-    name: "Apple iPhone 13 (128 GB) RED",
-    brand: "Marca Apple",
-    price: 6250,
-    image: "images/apple6.webp"
-  },
-  {
-    id: 13,
-    name: "Smartphone Xiaomi POCO X6 Pro 5G 512GB",
-    brand: "Marca Xiaomi",
-    price: 5850,
-    image: "images/xiaomi7.webp"
-  },
-  {
-    id: 14,
-    name: "Apple iPhone 16 Pro Max (256 GB) Titânio preto",
-    brand: "Marca Apple",
-    price: 8850,
-    image: "images/apple7.webp"
-  },
-  {
-    id: 15,
-    name: "Apple iPhone 15 (128 GB) Verde",
-    brand: "Marca Apple",
-    price: 7950,
-    image: "images/apple8.webp"
-  },
+//   {
+//     id: 4,
+//     name: "Smartphone Redmi 13C",
+//     brand: "Marca Xiaomi",
+//     price: 4600,
+//     image: "images/xiaomi4.webp"
+//   },
+//   {
+//     id: 5,
+//     name: "Smartphone Xiaomi Redmi Note 50",
+//     brand: "Marca Xiaomi",
+//     price: 5450,
+//     image: "images/xiaomi5.webp"
+//   },
+//   {
+//     id: 6,
+//     name: "Smartphone Xiaomi Redmi Note 13",
+//     brand: "Marca Xiaomi",
+//     price: 4820,
+//     image: "images/xiaomi6.webp"
+//   },
+//   {
+//     id: 7,
+//     name: "Apple iPhone 15 (128 GB) Rosa",
+//     brand: "Marca Apple",
+//     price: 6830,
+//     image: "images/apple1.webp"
+//   },
+//   {
+//     id: 8,
+//     name: "iPhone 12 Apple 64GB Preto",
+//     brand: "Marca Apple",
+//     price: 7150,
+//     image: "images/apple2.webp"
+//   },
+//   {
+//     id: 9,
+//     name: "Smartphone Xiaomi Redmi Note 13 ",
+//     brand: "Marca Xiaomi",
+//     price: 3450,
+//     image: "images/apple3.webp"
+//   },
+//   {
+//     id: 10,
+//     name: "Apple iPhone 12 (128 GB) Meia noite ",
+//     brand: "Marca Apple",
+//     price: 4150,
+//     image: "images/apple4.webp"
+//   },
+//   {
+//     id: 11,
+//     name: "Apple iPhone 14 (128 GB) Meia noite ",
+//     brand: "Marca Apple",
+//     price: 8850,
+//     image: "images/apple5.webp"
+//   },
+//   {
+//     id: 12,
+//     name: "Apple iPhone 13 (128 GB) RED",
+//     brand: "Marca Apple",
+//     price: 6250,
+//     image: "images/apple6.webp"
+//   },
+//   {
+//     id: 13,
+//     name: "Smartphone Xiaomi POCO X6 Pro 5G 512GB",
+//     brand: "Marca Xiaomi",
+//     price: 5850,
+//     image: "images/xiaomi7.webp"
+//   },
+//   {
+//     id: 14,
+//     name: "Apple iPhone 16 Pro Max (256 GB) Titânio preto",
+//     brand: "Marca Apple",
+//     price: 8850,
+//     image: "images/apple7.webp"
+//   },
+//   {
+//     id: 15,
+//     name: "Apple iPhone 15 (128 GB) Verde",
+//     brand: "Marca Apple",
+//     price: 7950,
+//     image: "images/apple8.webp"
+//   },
 ]
 
 displayProducts(products);
