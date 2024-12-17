@@ -6,19 +6,13 @@
   overflow-x: hidden;
 }
 
-:root {
-  --main-color: #ececec;
-  --color: whitesmoke;
-  --button-color: ;
-}
-
 .header-capa {
   text-align: center;
-  background-image: url('/images/capa4.jpg');
+  background-image: url('../images/capa_inicio.png');
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 20px;
+  padding: 260px 0 0;
 }
 
 .header-capa h1 {
@@ -38,7 +32,7 @@
   background-image: linear-gradient(to right top, #133d7f, #003c9e, #0038ba, #002dd4, #1b12eb);
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -110,7 +104,7 @@ section {
   background-color: #e6e8e3;
   padding: 6px;
   width: 350px;
-  height: 450px;
+  height: 470px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +123,7 @@ form {
 }
 
 .buttonsForm {
-  margin-top: 40px;
+  margin-top: 30px;
   position: relative;
   border-radius: 30px;
   box-shadow: 0 0 7px 0 #133d7f;
@@ -145,7 +139,7 @@ form {
 
 .btnColor {
   position: absolute;
-  width: 108px;
+  width: 129px;
   height: 100%;
   background: linear-gradient(to right, #133D7F, #01A2C8);
   border-radius: 30px;
@@ -153,7 +147,7 @@ form {
 }
 
 #btnSignin {
-  color: white;
+  color: black;
 }
 
 input[type="email"], input[type="password"] {
@@ -211,11 +205,11 @@ i {
 }
 
 .fa-lock {
-  top: 121px;
+  top: 128px;
 }
 
 .iPassword2 {
-  top: 200px;
+  top: 212px;
 }
 
 .material-symbols-outlined {
@@ -344,3 +338,64 @@ i {
   margin-right: 3px;
   color: #e82626;
 } */
+
+
+@media (max-width: 768px) {
+
+  .header-capa {
+    padding: 150px 0 0;
+  }
+
+  .header-capa h1 {
+    font-size: 24px;
+  }
+
+  .header-capa p {
+    font-size: 18px;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  form {
+    border: solid red;
+    width: 100%;
+    height: auto;
+  }
+
+  .colfooter {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+
+  .footer-container .content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header-capa h1 {
+    font-size: 18px;
+  }
+
+  .header-capa p {
+    font-size: 14px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
