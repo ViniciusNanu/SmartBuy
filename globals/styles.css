@@ -6,23 +6,23 @@ body {
 
 .header-capa {
   text-align: center;
-  background-image: url('../images/capa_inicio.png');
+  background-image: url('../images/capa4.jpg');
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 180px 0 0;
+  padding: 5px 0 0px;
 }
 
 .header-capa h1 {
   font-family: "Sofia", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   color: white
 }
 
 .header-capa p {
   position: relative;
   font-family: "Sofia", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: white
 }
 
@@ -35,7 +35,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 40%;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation: moveRight 5s infinite;
@@ -187,7 +187,7 @@ h2 {
   }
 
   .header-capa p {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .card h2 {
@@ -207,9 +207,9 @@ h2 {
 
 .main_footer .content {
   float: left;
-  width: 90%;
+  width: 100%;
   margin: 0 5%;
-  padding: 1em 0;
+  
 }
 
 .container {
@@ -224,17 +224,13 @@ h2 {
   margin-bottom: 2em;
 }
 
-.colfooter ul {
-  width: 100%;
-  float: left;
-}
 
-.colfooter ul li {
+.colfooter li {
   padding: 0.2em 0em;
   list-style-type: none;
 }
 
-.colfooter ul li a {
+.colfooter  li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1em;
@@ -245,7 +241,7 @@ h2 {
 }
 
 .colfooter ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .colfooter .titleFooter {
@@ -284,20 +280,6 @@ h2 {
   border: 1px solid #ffffff;
 }
 
-.main_footer_copy {
-  background-color: #01a2c8;
-  width: 100%;
-  float: left;
-  text-align: center;
-  padding: 1.5em 0em;
-}
-
-.main_footer_copy p {
-  font-family: 'open_sanslight', sans-serif;
-  font-size: 1em;
-  color: #e1e0e0;
-  height: 20px;
-}
 
 .main_footer_copy .m-b-footer {
   margin-bottom: 0.5em;
