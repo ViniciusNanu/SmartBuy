@@ -150,6 +150,14 @@ form {
   color: black;
 }
 
+#mensagem {
+  margin-top: 10px; /* Ajusta a distância entre a mensagem e o checkbox */
+  text-align: center; /* Centraliza a mensagem */
+  font-size: 14px; /* Tamanho da fonte da mensagem */
+}
+
+
+
 input[type="email"], input[type="password"] {
   border: none;
   margin-top: 40px;
@@ -341,34 +349,51 @@ i {
 
 
 @media (max-width: 768px) {
-
   .header-capa {
-    padding: 150px 0 0;
+    padding: 80px 10px 40px;
   }
 
   .header-capa h1 {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .header-capa p {
-    font-size: 18px;
+    font-size: 1rem;
   }
 
-  header nav ul li {
-    display: block;
-    margin: 5px 0;
+  header nav ul li a {
+    font-size: 0.9rem;
   }
 
   .container {
-    width: 90%;
-    height: auto;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-capa {
+    padding: 60px 10px 30px;
   }
 
-  form {
-    border: solid red;
-    width: 100%;
-    height: auto;
+  .header-capa h1 {
+    font-size: 1.8rem;
   }
+
+  .header-capa p {
+    font-size: 0.9rem;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  /* .footer-container {
+    font-size: 0.8rem;
+  }
+
+  .footer-container_copy p {
+    font-size: 0.7rem;
+  } */
 
   .colfooter {
     width: 100%;
@@ -378,24 +403,5 @@ i {
 
   .footer-container .content {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .header-capa h1 {
-    font-size: 18px;
-  }
-
-  .header-capa p {
-    font-size: 14px;
-  }
-
-  .card h2 {
-    font-size: 16px;
-  }
-
-  .card p {
-    font-size: 14px;
   }
 }
