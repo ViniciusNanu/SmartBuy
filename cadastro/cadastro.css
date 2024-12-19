@@ -6,13 +6,22 @@
   overflow-x: hidden;
 }
 
-.header-capa {
+/* .header-capa {
   text-align: center;
   background-image: url('../images/capa_inicio.png');
   background-size: cover;
   background-position: center;
   color: white;
   padding: 260px 0 0;
+} */
+
+.header-capa {
+  text-align: center;
+  background-image: url('../images/capa4.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5px 0 0px;
 }
 
 .header-capa h1 {
@@ -156,7 +165,11 @@ form {
   font-size: 14px; /* Tamanho da fonte da mensagem */
 }
 
-
+#mensagemError {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0.5px;
+}
 
 input[type="email"], input[type="password"] {
   border: none;
@@ -184,7 +197,7 @@ button[type="submit"] {
   outline: none;
   padding: 8px 0 8px 15px;
   font-size: 15px;
-  margin-top: 40px;
+  margin-top: 9px;
   cursor: pointer;
 }
 

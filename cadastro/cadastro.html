@@ -66,16 +66,18 @@
           </form>
 
           <form id="signup">
-            <input type="email" placeholder="E-mail" required />
+            <input type="email" id="emailUp" placeholder="E-mail" required />
             <i class="fa-solid fa-envelope"></i>
-            <input type="password" placeholder="Senha" required />
+            <input type="password" id="passwordUp" placeholder="Senha" required />
             <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Repetir Senha" />
+            <input type="password" id="confirmaPasswordUp" placeholder="Repetir Senha" />
             <i class="fas fa-lock iPassword2"></i>
             <div class="div-Check">
               <input type="checkbox" />
               <span>Termos</span>
             </div>
+            <br>
+          <div id="mensagemError"></div>
             <button type="submit">Cadastrar</button>
           </form>
         </div>
